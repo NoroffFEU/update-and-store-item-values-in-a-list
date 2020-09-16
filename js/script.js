@@ -1,9 +1,11 @@
 import createList from "./components/createList.js";
 import { saveToStorage, getFromStorage } from "./utils/storage.js";
 import { listKey } from "./settings.js";
+import clearButton from "./components/clearButton.js";
 
 const listItems = getFromStorage(listKey);
 createList(listItems);
+clearButton();
 
 const listInput = document.querySelector("input");
 const button = document.querySelector("button");
