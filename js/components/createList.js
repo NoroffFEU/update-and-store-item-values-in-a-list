@@ -16,7 +16,7 @@ export default function createList(listItems) {
         textbox.addEventListener("keyup", updateValue);
     });
 
-    function updateValue() {
+    function updateValue(event) {
         const id = event.target.dataset.id;
         const value = event.target.value.trim();
 
